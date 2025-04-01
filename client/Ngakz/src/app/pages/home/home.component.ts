@@ -117,25 +117,25 @@ export class HomeComponent implements OnInit  {
       imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg',
       name: 'Spotify',
-      url: 'https://www.spotify.com/',
+      url: 'https://open.spotify.com/artist/0GNcLuKnpfCagq8Hya0m6P',
     },
     {
       imageUrl:
         'https://i.pinimg.com/474x/df/74/c3/df74c38d4de71310a2a72ac5a420cb4a.jpg',
       name: 'Apple',
-      url: 'https://music.apple.com/',
+      url: 'https://music.apple.com/za/artist/gee-prime/1489841098',
     },
     {
       imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg',
       name: 'YouTube',
-      url: 'https://www.youtube.com/',
+      url: 'https://www.youtube.com/watch?v=K3qK0fAazWg',
     },
     {
       imageUrl:
         'https://i.pinimg.com/474x/05/ee/55/05ee55960ac7c0162c2f2ee988dc7783.jpg',
       name: 'Deezer',
-      url: 'https://www.deezer.com/',
+      url: 'https://www.deezer.com/en/artist/95413472',
     },
   ];
 
@@ -321,11 +321,11 @@ export class HomeComponent implements OnInit  {
 
   videos = [
     {
-      src: 'https://www.youtube.com/embed/uLwWx4eh4t0',
+      src: 'https://www.youtube.com/embed/haHWdjCUG0Q',
       title: "Could've Been",
     },
     {
-      src: 'https://www.youtube.com/embed/aQVCFMqX6YQ',
+      src: 'https://www.youtube.com/embed/haHWdjCUG0Q',
       title: 'A Re Deitane',
     },
   ];
