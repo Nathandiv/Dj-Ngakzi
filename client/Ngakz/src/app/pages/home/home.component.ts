@@ -175,7 +175,7 @@ export class HomeComponent implements OnInit  {
   cards = [
     {
       imgSrc:
-        'https://cdn-images.dzcdn.net/images/cover/3a92e0b716ef8e0dcfa06b354d02e9fe/1900x1900-000000-80-0-0.jpg',
+        'https://i.pinimg.com/736x/28/b2/2d/28b22d55f559db540b64abf57afd7aa2.jpg',
       // imgWidth: ,
       imgHeight: 350,
       links: [
@@ -201,7 +201,7 @@ export class HomeComponent implements OnInit  {
     },
     {
       imgSrc:
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qauq6cr0ZIxiceynAX5bfWffOaQK26Gglg&s476/250/300',
+        'https://i.pinimg.com/736x/81/f3/8e/81f38e1613b7bab5423a201546d22439.jpg',
       imgHeight: 150,
       links: [
         {
@@ -226,7 +226,7 @@ export class HomeComponent implements OnInit  {
     },
     {
       imgSrc:
-        'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c8/20/36/c820362b-b622-df07-ed39-86a854698a0b/5063654459797_cover.jpg/486x486bb.png',
+        'https://i.pinimg.com/736x/7e/fe/3b/7efe3bb969a6a84d93f8363ed5a19ba0.jpg',
       links: [
         {
           href: 'https://ditto.fm/timeless-confessions',
@@ -251,7 +251,7 @@ export class HomeComponent implements OnInit  {
 
     {
       imgSrc:
-        'https://source.boomplaymusic.com/group10/M00/06/22/251d9432a9844ee0ac2091643565a5e9_320_320.jpg',
+        'https://i.pinimg.com/474x/43/80/bd/4380bd8b2ab1c5824b3956bc5851b1fd.jpg',
       links: [
         {
           href: 'https://ditto.fm/timeless-confessions',
