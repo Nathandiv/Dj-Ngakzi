@@ -300,7 +300,7 @@ export class HomeComponent implements OnInit  {
 
   images = [
     {
-      src: 'https://mp3bullet.ng/wp-content/uploads/2025/02/Gee-Primes-Timeless-Confessions-Album-A-Soulful-Afro-House-Journey.jpg',
+      src: 'https://i.pinimg.com/474x/c8/b8/6c/c8b86ca465546623dbdab4283cf22819.jpg',
       alt: 'office content 1',
       height: '250px',
       marginTop: '0px',
@@ -309,7 +309,7 @@ export class HomeComponent implements OnInit  {
       aosEasing: 'ease-in-sine'
     },
     {
-      src: 'https://images.caxton.co.za/wp-content/uploads/sites/112/2024/03/A7403411_79617-e1709890587845.jpg',
+      src: 'https://i.pinimg.com/474x/ed/7f/e8/ed7fe8a52ddc2393668de7993cb1a690.jpg',
       alt: 'office content 2',
       height: '250px',
       marginTop: '30px',
