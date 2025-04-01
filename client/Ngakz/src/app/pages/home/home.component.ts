@@ -45,42 +45,42 @@ export class HomeComponent implements OnInit  {
       title: 'Discover Inspired Living',
       subtitle: 'Explore Elevated Living',
       description: 'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
-      image: 'https://i.pinimg.com/474x/d2/8e/ab/d28eabe532ef88cb044780fbfb24dafb.jpg',
+      image: 'https://i.pinimg.com/736x/7a/b5/23/7ab5239ab90c8e05116156a568426873.jpg',
       alt: 'Modern living room setup'
     },
     {
       title: 'Premium Comfort',
       subtitle: 'Experience Luxury',
       description: 'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
-      image: 'https://i.pinimg.com/474x/2a/c3/ca/2ac3cab498870520aabca9b96e0baef7.jpg',
+      image: 'https://i.pinimg.com/474x/3c/9d/26/3c9d264c2d71651ea2395e4dfe95bd0a.jpg',
       alt: 'Luxury furniture showcase'
     },
     {
       title: 'Discover Inspired Living',
       subtitle: 'Explore Elevated Living',
       description: 'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
-      image: 'https://i.pinimg.com/474x/34/1b/7e/341b7e3c8ddc3ea71b610e100560c7a5.jpg',
+      image: 'https://i.pinimg.com/736x/81/f3/8e/81f38e1613b7bab5423a201546d22439.jpg',
       alt: 'Modern living room setup'
     },
     {
       title: 'Premium Comfort',
       subtitle: 'Experience Luxury',
       description: 'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
-      image: 'https://i.pinimg.com/474x/31/e0/7b/31e07bca26c26434484c9ab8c80b44a0.jpg',
+      image: 'https://i.pinimg.com/736x/c8/b8/6c/c8b86ca465546623dbdab4283cf22819.jpg',
       alt: 'Luxury furniture showcase'
     },
         {
       title: 'Discover Inspired Living',
       subtitle: 'Explore Elevated Living',
       description: 'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
-      image: 'https://i.pinimg.com/736x/ed/8a/6b/ed8a6b2efecc8d201c0193e68a6acf84.jpg',
+      image: 'https://i.pinimg.com/474x/ed/7f/e8/ed7fe8a52ddc2393668de7993cb1a690.jpg',
       alt: 'Modern living room setup'
     },
     {
       title: 'Premium Comfort',
       subtitle: 'Experience Luxury',
       description: 'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
-      image: 'https://i.pinimg.com/474x/31/75/5b/31755bdb3c36236a2a7dae06df9eddc8.jpg',
+      image: 'https://i.pinimg.com/474x/4c/7d/03/4c7d03d1de08d5929a903666923e3eab.jpg',
       alt: 'Luxury furniture showcase'
     }
   ];
