@@ -227,6 +227,7 @@ export class HomeComponent implements OnInit  {
     {
       imgSrc:
         'https://i.pinimg.com/736x/7e/fe/3b/7efe3bb969a6a84d93f8363ed5a19ba0.jpg',
+        imgHeight: 150,
       links: [
         {
           href: 'https://ditto.fm/timeless-confessions',
@@ -252,6 +253,7 @@ export class HomeComponent implements OnInit  {
     {
       imgSrc:
         'https://i.pinimg.com/474x/43/80/bd/4380bd8b2ab1c5824b3956bc5851b1fd.jpg',
+      imgHeight: 150,
       links: [
         {
           href: 'https://ditto.fm/timeless-confessions',
