@@ -320,16 +320,16 @@ export class HomeComponent implements OnInit  {
       aosEasing: 'ease-in-sine'
     },
   ];
-
   videos = [
     {
-      src: 'https://www.youtube.com/embed/haHWdjCUG0Q',
-      title: "Could've Been",
+      title: 'Video 1',
+      src: 'https://www.youtube.com/embed/VIDEO_ID_1',
     },
     {
-      src: 'https://www.youtube.com/embed/haHWdjCUG0Q',
-      title: 'A Re Deitane',
+      title: 'Video 2',
+      src: 'https://www.youtube.com/embed/VIDEO_ID_2',
     },
+    // Add more videos as needed
   ];
   
 
@@ -352,20 +352,19 @@ export class HomeComponent implements OnInit  {
   getPartialStar(rating: number): number {
     return rating % 1;
   }
-
-
-  currentVideo: SafeResourceUrl; // Holds the currently playing video
+  currentVideo: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
-    this.currentVideo = this.getSanitizedUrl(this.videos[0].src + '?autoplay=1'); // Load first video with autoplay
+    // Initialize the first video with autoplay
+    this.currentVideo = this.getSanitizedUrl(this.videos[0].src + '?autoplay=1');
   }
 
-  // Sanitize the video URL
+  // Sanitize the video URL to avoid security issues
   getSanitizedUrl(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
-  // Change video without refreshing the iframe
+  // Change the currently playing video without refreshing the iframe
   changeVideo(index: number) {
     this.currentVideo = this.getSanitizedUrl(this.videos[index].src + '?autoplay=1');
   }

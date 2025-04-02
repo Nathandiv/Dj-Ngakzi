@@ -248,29 +248,12 @@
   </div>
 
   <div class="video-section">
-    <!-- <div
-    
-    *ngFor="let video of videos" class="iframe-container">
-    
-    <iframe
-    width="1406"
-    height="736"
-    [src]="getSanitizedUrl(video.src)"
-     [title]="video.title"
-     -->
+   
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/haHWdjCUG0Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <div *ngFor="let video of videos" class="iframe-container">
-      <iframe
-        width="779"
-        height="438"
-        [src]="getSanitizedUrl(video.src)"
-        [title]="video.title"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
     </div>
+  
   </div>
 </section>
 
