@@ -2,7 +2,7 @@
 <!-- Home Section -->
 
 <section data-aos="zoom-out-down" id="home" class="homesec">
-  <div class="relative w-full overflow-hidden" >
+  <div class="relative w-full overflow-hidden">
     <!-- Carousel container -->
     <div class="relative">
       <!-- Carousel slides -->
@@ -30,7 +30,7 @@
       <!-- Navigation arrows -->
       <button
         (click)="previousSlide()"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2  p-3 rounded-r-lg shadow-md hover:bg-green-500 hover:text-white transition-all duration-300"
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 p-3 rounded-r-lg shadow-md hover:bg-green-500 hover:text-white transition-all duration-300"
       >
         <svg
           class="w-6 h-6"
@@ -48,7 +48,7 @@
       </button>
       <button
         (click)="nextSlide()"
-        class="absolute right-0 top-1/2 transform -translate-y-1/2  p-3 rounded-l-lg shadow-md hover:bg-green-500 hover:text-white transition-all duration-300"
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 p-3 rounded-l-lg shadow-md hover:bg-green-500 hover:text-white transition-all duration-300"
       >
         <svg
           class="w-6 h-6"
@@ -112,8 +112,11 @@
   <div
     class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
   >
-    <div  data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom" class="about1 font-light text-gray-500 sm:text-lg dark:text-gray-400">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      class="about1 font-light text-gray-500 sm:text-lg dark:text-gray-400"
+    >
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
         Bio
       </h2>
@@ -124,18 +127,22 @@
 
       <p class="mb-4">
         <span>
-          <em>DJ Ngakz</em>, a trailblazing 14-year-old DJ and entrepreneur, is redefining South Africa’s youth culture.  
-          This June, in celebration of <em>Youth Month</em>, she will release her highly anticipated single alongside the launch of  
-          her new <em>cosmetic range</em>, marking a major milestone in her journey as a rising force in  
+          <em>DJ Ngakz</em>, a trailblazing 14-year-old DJ and entrepreneur, is
+          redefining South Africa’s youth culture. This June, in celebration of
+          <em>Youth Month</em>, she will release her highly anticipated single
+          alongside the launch of her new <em>cosmetic range</em>, marking a
+          major milestone in her journey as a rising force in
           <em>entertainment</em> and <em>business</em>.
         </span>
       </p>
-      
+
       <p class="">
         <span>
-          With a passion for <em>music</em> and <em>style</em>, <em>DJ Ngakz</em> is more than a DJ—she’s a brand in the making.  
-          Her upcoming <em>single</em> embodies the vibrant spirit of South African youth,  
-          inspiring her peers to embrace their <em>passions</em> and pursue their <em>dreams fearlessly</em>.
+          With a passion for <em>music</em> and <em>style</em>,
+          <em>DJ Ngakz</em> is more than a DJ—she’s a brand in the making. Her
+          upcoming <em>single</em> embodies the vibrant spirit of South African
+          youth, inspiring her peers to embrace their <em>passions</em> and
+          pursue their <em>dreams fearlessly</em>.
         </span>
       </p>
     </div>
@@ -168,23 +175,13 @@
       Music Hub
     </h1>
     <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-      DJ Ngakz's sound blends Amapiano, House,
-       and Afrobeat, reflecting her energy and
-        creativity.
-
-
-
-
-
-
-
-
-
+      DJ Ngakz's sound blends Amapiano, House, and Afrobeat, reflecting her
+      energy and creativity.
+    </p>
   </div>
 
   <div class="cardM">
     <div
-   
       class="flex flex-wrap overflow-hidden sm:-m-4 -mx-4 gap-6 justify-center items-stretch"
     >
       <figure
@@ -222,7 +219,7 @@
     </div>
   </div>
 
-  <div class="stream min-h-screen p-8 mt-10 " style="margin-bottom: 0px;">
+  <div class="stream min-h-screen p-8 mt-10" style="margin-bottom: 0px">
     <header class="mb-12">
       <h1 class="text-4xl font-bold text-center mb-2">STREAM NOW</h1>
       <p class="text-gray-400 text-center">
@@ -232,10 +229,9 @@
 
     <div
       class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4"
-      style="margin-top: -30px;"
+      style="margin-top: -30px"
     >
       <div
-     
         *ngFor="let platform of platforms"
         class="bg-stream-gray p-4 rounded-lg flex flex-col items-center justify-center border-none"
       >
@@ -251,8 +247,7 @@
     </div>
   </div>
 
-  <div  class="video-section" >
-
+  <div class="video-section">
     <!-- <div
     
     *ngFor="let video of videos" class="iframe-container">
@@ -264,19 +259,17 @@
      [title]="video.title"
      -->
 
-    <div
-    
-     *ngFor="let video of videos" class="iframe-container">
-
-     <iframe 
-     width="779" height="438" 
-     [src]="getSanitizedUrl(video.src)"
-     [title]="video.title"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen></iframe>
-   
+    <div *ngFor="let video of videos" class="iframe-container">
+      <iframe
+        width="779"
+        height="438"
+        [src]="getSanitizedUrl(video.src)"
+        [title]="video.title"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </div>
   </div>
 </section>
@@ -370,19 +363,14 @@
   </div>
 </section>
 
-<section
-  id="contact"
-  class="text-white body-font relative"
->
-<h1 class="text-4xl font-bold text-white mb- text-center">
-  Contact
-</h1>
-  <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap "
+<section id="contact" class="text-white body-font relative">
+  <h1 class="text-4xl font-bold text-white mb- text-center">Contact</h1>
+  <div
+    class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap"
     style="margin-top: -70px"
   >
     <div
-    
-      class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative shadow-lg shadow-black/80"
+      class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative shadow-lg shadow-white/60"
     >
       <iframe
         width="100%"
@@ -397,7 +385,9 @@
         style="filter: grayscale(1) contrast(1.2) opacity(0.4)"
       ></iframe>
 
-      <div class="bg-white text-black relative flex flex-wrap py-6 rounded shadow-md">
+      <div
+        class="bg-white text-black relative flex flex-wrap py-6 rounded shadow-md"
+      >
         <div class="lg:w-1/2 px-6">
           <h2
             class="title-font font-semibold text-gray-900 tracking-widest text-xs"
@@ -432,14 +422,12 @@
     </div>
 
     <div
-      class="lg:w-1/3 md:w-1/2  flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 shadow-black/80"
+      class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 shadow-black/80"
     >
-      <h2 class="text-white text-lg mb-1 font-medium title-font">
-        Contact Me
-      </h2>
+      <h2 class="text-white text-lg mb-1 font-medium title-font">Contact Me</h2>
       <p class="leading-relaxed mb-5 text-white">
-        Share your feedback and be part of the community! 
-        Stay connected, and for bookings, reach us here—we’ll surely get back to you."
+        Share your feedback and be part of the community! Stay connected, and
+        for bookings, reach us here—we’ll surely get back to you."
       </p>
 
       <form action="https://api.web3forms.com/submit" method="POST">
@@ -450,53 +438,54 @@
         />
 
         <div
-        data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1200"
-         class="relative mb-4">
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          class="relative mb-4"
+        >
           <label for="name" class="leading-7 text-sm text-white">Name</label>
           <input
             type="text"
             id="name"
             name="name"
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-md shadow-black/70"
-            required
-          />
-        </div>
-        <div 
-        data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1600"
-        class="relative mb-4">
-          <label for="email" class="leading-7 text-sm text-white"
-            >Email</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-md shadow-black/70"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-md shadow-white/60"
             required
           />
         </div>
         <div
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="2000"
-        class="relative mb-4">
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1600"
+          class="relative mb-4"
+        >
+          <label for="email" class="leading-7 text-sm text-white">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-md shadow-white/60"
+            required
+          />
+        </div>
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="2000"
+          class="relative mb-4"
+        >
           <label for="message" class="leading-7 text-sm text-white"
             >Message</label
           >
           <textarea
             id="message"
             name="message"
-            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-md shadow-black/70"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-md shadow-white/60"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          class="custom-button text-white border-0 py-2 px-6 hover:border-white transition-all duration-300 rounded text-lg shadow-md shadow-black/70 delay-150 ease-in-out hover:-translate-y-1 hover:scale-110"
+          class="custom-button text-white border-0 py-2 px-6 hover:border-white transition-all duration-300 rounded text-lg shadow-md shadow-white/70 delay-150 ease-in-out hover:-translate-y-1 hover:scale-110"
           style="background-color: rgba(20, 19, 20, 0.946)"
         >
           <span>Submit 🚀</span>
