@@ -102,7 +102,7 @@ figure:hover img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
   gap: 20px;
   justify-content: center;
-  margin-top: -600px; /* Removed negative margin */
+  margin-top: -430px; /* Removed negative margin */
 }
 
 .iframe-container {
