@@ -288,6 +288,21 @@ figure:hover img {
 }
 
 
+@media (max-width: 360px) and (max-height: 780px) {
+
+  .video-section  {
+    margin-top: -520px;
+
+
+  }
+
+  .about1 {
+    margin-top:-50px; /* Remove large margin-top */
+   
+  }
+
+}
+
 
 :host ::ng-deep .custom-button {
   text-align: center;
