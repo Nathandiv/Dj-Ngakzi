@@ -108,66 +108,41 @@
   </div> -->
 </section>
 
-<section id="about" class="about bg-black" style="margin-top: -20px">
-  <div
-    class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
-  >
-    <div
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
-      class="about1 font-light text-gray-500 sm:text-lg dark:text-gray-400"
+<section class="flex flex-col md:flex-row items-center justify-center min-h-screen p-6 " style="margin-top: -60px;">
+  <!-- Text Content Section -->
+  <div class="w-full md:w-1/2 flex flex-col justify-center max-w-xl">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+      Get to <br /> <span class="text-white">know me</span>
+    </h1>
+    <p class="text-sm md:text-base text-gray-300 mb-8">
+      <span class="text-white font-semibold">DJ Ngakz</span> is a trailblazing 14-year-old DJ and entrepreneur set to
+      redefine South Africa’s youth culture. In June, Youth Month, she will release her highly anticipated single
+      alongside the launch of a new cosmetic range, marking a major milestone in her journey as a multi-talented
+      young force in entertainment and business.
+    </p>
+    <!-- <button
+      class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300 w-fit"
     >
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
-        Bio
-      </h2>
-      <div
-        class="w-12 h-1 bg-white rounded mb-4"
-        style="margin-top: -8px"
-      ></div>
-
-      <p class="mb-4 text-white">
-        <span>
-          <em>DJ Ngakz</em>, a trailblazing 14-year-old DJ and entrepreneur, is
-          redefining South Africa’s youth culture. This June, in celebration of
-          <em>Youth Month</em>, she will release her highly anticipated single
-          alongside the launch of her new <em>cosmetic range</em>, marking a
-          major milestone in her journey as a rising force in
-          <em>entertainment</em> and <em>business</em>.
-        </span>
-      </p>
-
-      <p class="text-white">
-        <span>
-          With a passion for <em>music</em> and <em>style</em>,
-          <em>DJ Ngakz</em> is more than a DJ—she’s a brand in the making. Her
-          upcoming <em>single</em> embodies the vibrant spirit of South African
-          youth, inspiring her peers to embrace their <em>passions</em> and
-          pursue their <em>dreams fearlessly</em>.
-        </span>
-      </p>
-    </div>
-
-    <div class="grid grid-cols-2 gap-4 mt-8">
-      <div *ngFor="let image of images">
-        <img
-          [src]="image.src"
-          [alt]="image.alt"
-          [style.height]="image.height"
-          [style.marginTop]="image.marginTop"
-          [attr.data-aos]="image.aos"
-          [attr.data-aos-offset]="image.aosOffset"
-          [attr.data-aos-easing]="image.aosEasing"
-          class="w-full rounded-lg shadow-lg shadow-white/60 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-        />
-      </div>
-    </div>
+      LEARN MORE
+    </button> -->
   </div>
+
+  <!-- Image Section -->
+  <div class="w-full md:w-1/2">
+    <img
+      src="https://i.pinimg.com/474x/b7/04/e1/b704e1e93a7b81529f4ffb3ae251caee.jpg"
+      alt="DJ Ngakz"
+      class="rounded-xl object-cover w-full max-w-[400px] h-full max-h-[400px]"
+    />
+  </div>
+
+
 </section>
 
 <section id="music">
   <div
     class="flex flex-col bg-black text-center w-full"
-    style="margin-top: -10px"
+    style="margin-top: -50px"
   >
     <h1
       class="sm:text-3xl text-4xl tracking-tight font-extrabold text-white mb-2"
