@@ -273,9 +273,21 @@ figure:hover img {
   }
 
   .about {
-    margin-top:250px; /* Remove large margin-top */
+    margin-top:260px; /* Remove large margin-top */
    
   }
+
+  .img {
+    margin-top: -50px;
+  }
+.mus {
+  margin-top: 50px;
+}
+
+.music {
+  margin-top: 50px;
+}
+
 }
 
 
