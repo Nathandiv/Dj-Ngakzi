@@ -142,7 +142,7 @@ figure:hover img {
   }
 
   .about {
-    margin-top:-50px; /* Remove large margin-top */
+    margin-top:100px; /* Remove large margin-top */
    
   }
 
@@ -150,10 +150,7 @@ figure:hover img {
     height: 100%;
   }
 
-  .about1 {
-    margin-top:-230px; /* Remove large margin-top */
-   
-  }
+
 
   video {
     width: 100%;
@@ -215,8 +212,8 @@ figure:hover img {
    
   }
 
-  .about1 {
-    margin-top:70px; /* Remove large margin-top */
+  .about {
+    margin-top:100px; /* Remove large margin-top */
    
   }
 
@@ -236,8 +233,8 @@ figure:hover img {
    
   }
 
-  .about1 {
-    margin-top:10px; /* Remove large margin-top */
+  .about {
+    margin-top:100px; /* Remove large margin-top */
    
   }
 
@@ -257,8 +254,8 @@ figure:hover img {
    
   }
 
-  .about1 {
-    margin-top:45px; /* Remove large margin-top */
+  .about {
+    margin-top:100px; /* Remove large margin-top */
    
   }
 
@@ -274,6 +271,11 @@ figure:hover img {
 
     
   }
+
+  .about {
+    margin-top:250px; /* Remove large margin-top */
+   
+  }
 }
 
 
@@ -284,6 +286,11 @@ figure:hover img {
     margin-top: -560px;
 
 
+  }
+
+  .about {
+    margin-top:70px; /* Remove large margin-top */
+   
   }
 }
 
@@ -296,10 +303,12 @@ figure:hover img {
 
   }
 
-  .about1 {
-    margin-top:-50px; /* Remove large margin-top */
+  .about {
+    margin-top:70px; /* Remove large margin-top */
    
   }
+
+
 
 }
 
