@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Input,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { NavbarComponent } from '../../Share-UI/navbar/navbar.component';
 import { FooterComponent } from '../../Share-UI/footer/footer.component';
 import { CommonModule } from '@angular/common';
@@ -20,6 +27,7 @@ interface CarouselSlide {
   subtitle: string;
   description: string;
   image: string;
+  imgClass?: string;
   alt: string;
 }
 
@@ -30,8 +38,7 @@ interface CarouselSlide {
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent implements OnInit  {
-
+export class HomeComponent implements OnInit {
   ngOnInit(): void {
     setInterval(() => {
       this.nextSlide();
@@ -39,52 +46,69 @@ export class HomeComponent implements OnInit  {
   }
 
   currentSlide = 0;
-  
+
   carouselSlides: CarouselSlide[] = [
     {
       title: 'Discover Inspired Living',
       subtitle: 'Explore Elevated Living',
-      description: 'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
-      image: 'https://i.pinimg.com/736x/7a/b5/23/7ab5239ab90c8e05116156a568426873.jpg',
-      alt: 'Modern living room setup'
+      description:
+        'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
+      image:
+        'https://i.pinimg.com/736x/7a/b5/23/7ab5239ab90c8e05116156a568426873.jpg',
+      imgClass: 'w-full h-full object-cover',
+      alt: 'Modern living room setup',
     },
     {
       title: 'Premium Comfort',
       subtitle: 'Experience Luxury',
-      description: 'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
-      image: 'https://i.pinimg.com/474x/3c/9d/26/3c9d264c2d71651ea2395e4dfe95bd0a.jpg',
-      alt: 'Luxury furniture showcase'
+      description:
+        'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
+      image:
+        'https://i.pinimg.com/736x/cb/c6/0e/cbc60e61d527662a916e97efcd54739d.jpg',
+      imgClass: 'w-full h-full object-cover',
+      alt: 'Luxury furniture showcase',
     },
     {
       title: 'Discover Inspired Living',
       subtitle: 'Explore Elevated Living',
-      description: 'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
-      image: 'https://i.pinimg.com/736x/81/f3/8e/81f38e1613b7bab5423a201546d22439.jpg',
-      alt: 'Modern living room setup'
+      description:
+        'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
+      image:
+        'https://i.pinimg.com/736x/81/f3/8e/81f38e1613b7bab5423a201546d22439.jpg',
+      imgClass: 'w-full h-full object-cover',
+      alt: 'Modern living room setup',
     },
     {
       title: 'Premium Comfort',
       subtitle: 'Experience Luxury',
-      description: 'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
-      image: 'https://i.pinimg.com/736x/c8/b8/6c/c8b86ca465546623dbdab4283cf22819.jpg',
-      alt: 'Luxury furniture showcase'
+      description:
+        'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
+      image:
+        'https://i.pinimg.com/736x/7e/fe/3b/7efe3bb969a6a84d93f8363ed5a19ba0.jpg',
+      imgClass: 'w-full h-full object-cover',
+      alt: 'Luxury furniture showcase',
     },
-        {
+    {
       title: 'Discover Inspired Living',
       subtitle: 'Explore Elevated Living',
-      description: 'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
-      image: 'https://i.pinimg.com/474x/ed/7f/e8/ed7fe8a52ddc2393668de7993cb1a690.jpg',
-      alt: 'Modern living room setup'
+      description:
+        'Discover elevated living at its finest with TP2 Furniture Shop. Our curated collection combines timeless elegance with modern flair, offering furnishings that redefine style and comfort.',
+      image:
+        'https://i.pinimg.com/736x/28/b2/2d/28b22d55f559db540b64abf57afd7aa2.jpg',
+      imgClass: 'w-full h-full object-cover',
+      alt: 'Modern living room setup',
     },
     {
       title: 'Premium Comfort',
       subtitle: 'Experience Luxury',
-      description: 'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
-      image: 'https://i.pinimg.com/474x/4c/7d/03/4c7d03d1de08d5929a903666923e3eab.jpg',
-      alt: 'Luxury furniture showcase'
-    }
+      description:
+        'Indulge in the perfect blend of comfort and style with our premium furniture collection. Each piece is carefully selected to bring both functionality and elegance to your living space.',
+      image:
+        'https://i.pinimg.com/736x/5a/f8/45/5af8457f5dd4012229aba9d9ea498a13.jpg',
+      imgClass: 'w-full h-full object-cover',
+      alt: 'Luxury furniture showcase',
+    },
   ];
-
 
   // @ViewChild('videoPlayer', { static: false }) videoPlayer!: ElementRef<HTMLVideoElement>;
 
@@ -130,8 +154,7 @@ export class HomeComponent implements OnInit  {
         'https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg',
       name: 'YouTube',
       url: 'https://www.youtube.com/watch?v=K3qK0fAazWg',
-    }
-  
+    },
   ];
 
   events: Event[] = [
@@ -222,7 +245,7 @@ export class HomeComponent implements OnInit  {
     {
       imgSrc:
         'https://i.pinimg.com/736x/7e/fe/3b/7efe3bb969a6a84d93f8363ed5a19ba0.jpg',
-        imgHeight: 150,
+      imgHeight: 150,
       links: [
         {
           href: 'https://ditto.fm/timeless-confessions',
@@ -303,7 +326,7 @@ export class HomeComponent implements OnInit  {
       marginTop: '0px',
       aos: 'fade-right',
       aosOffset: '300',
-      aosEasing: 'ease-in-sine'
+      aosEasing: 'ease-in-sine',
     },
     {
       src: 'https://i.pinimg.com/474x/ed/7f/e8/ed7fe8a52ddc2393668de7993cb1a690.jpg',
@@ -312,7 +335,7 @@ export class HomeComponent implements OnInit  {
       marginTop: '30px',
       aos: 'fade-left',
       aosOffset: '300',
-      aosEasing: 'ease-in-sine'
+      aosEasing: 'ease-in-sine',
     },
   ];
   videos = [
@@ -326,14 +349,16 @@ export class HomeComponent implements OnInit  {
     },
     // Add more videos as needed
   ];
-  
 
   nextSlide(): void {
     this.currentSlide = (this.currentSlide + 1) % this.carouselSlides.length;
   }
 
   previousSlide(): void {
-    this.currentSlide = this.currentSlide === 0 ? this.carouselSlides.length - 1 : this.currentSlide - 1;
+    this.currentSlide =
+      this.currentSlide === 0
+        ? this.carouselSlides.length - 1
+        : this.currentSlide - 1;
   }
 
   goToSlide(index: number): void {
@@ -351,7 +376,9 @@ export class HomeComponent implements OnInit  {
 
   constructor(private sanitizer: DomSanitizer) {
     // Initialize the first video with autoplay
-    this.currentVideo = this.getSanitizedUrl(this.videos[0].src + '?autoplay=1');
+    this.currentVideo = this.getSanitizedUrl(
+      this.videos[0].src + '?autoplay=1'
+    );
   }
 
   // Sanitize the video URL to avoid security issues
@@ -361,6 +388,8 @@ export class HomeComponent implements OnInit  {
 
   // Change the currently playing video without refreshing the iframe
   changeVideo(index: number) {
-    this.currentVideo = this.getSanitizedUrl(this.videos[index].src + '?autoplay=1');
+    this.currentVideo = this.getSanitizedUrl(
+      this.videos[index].src + '?autoplay=1'
+    );
   }
 }
