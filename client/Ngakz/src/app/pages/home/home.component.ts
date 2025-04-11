@@ -350,6 +350,43 @@ export class HomeComponent implements OnInit {
     // Add more videos as needed
   ];
 
+
+  songs = [
+    {
+      title: 'We Made It',
+      artist: 'Dj Ngakz',
+      coverImage: 'https://i.pinimg.com/736x/28/b2/2d/28b22d55f559db540b64abf57afd7aa2.jpg',
+      spotifyUrl: 'https://open.spotify.com/album/5YqU3VDyRbhwxq9QZvxsej',
+      appleUrl: 'https://music.apple.com/za/album/we-made-it/1523183534',
+      youtubeUrl: 'https://www.youtube.com/watch?v=example1'
+    },
+    {
+      title: 'Familia',
+      artist: 'Dj Ngakz',
+      coverImage: 'https://i.pinimg.com/736x/81/f3/8e/81f38e1613b7bab5423a201546d22439.jpg',
+      spotifyUrl: 'https://open.spotify.com/album/0OBF8qxQ8mexYbGZ4QWjrY',
+      appleUrl: 'https://music.apple.com/za/album/familia/1590330362',
+      youtubeUrl: 'https://www.youtube.com/watch?v=example2'
+    },
+    {
+      title: 'Home Sweet Home',
+      artist: 'Dj Ngakz',
+      coverImage: 'https://i.pinimg.com/736x/7e/fe/3b/7efe3bb969a6a84d93f8363ed5a19ba0.jpg',
+      spotifyUrl: 'https://open.spotify.com/album/1M3qEqOFLFkxJqONyqeIrx',
+      appleUrl: 'https://music.apple.com/za/album/home-sweet-home/1494531749',
+      youtubeUrl: 'https://www.youtube.com/watch?v=example3'
+    },
+    {
+      title: 'Su Kasi',
+      artist: 'Mi Casa',
+      coverImage: 'https://i.pinimg.com/474x/43/80/bd/4380bd8b2ab1c5824b3956bc5851b1fd.jpg',
+      spotifyUrl: 'https://open.spotify.com/album/6LaGE3QQ9XpXxbQ6aUJHBJ',
+      appleUrl: 'https://music.apple.com/za/album/su-kasi/1494531750',
+      youtubeUrl: 'https://www.youtube.com/watch?v=example4'
+    }
+  ];
+
+
   nextSlide(): void {
     this.currentSlide = (this.currentSlide + 1) % this.carouselSlides.length;
   }

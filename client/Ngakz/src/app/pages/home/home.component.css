@@ -4,6 +4,19 @@
     height: 100%;
     color: white; /* Optional: Ensure text is visible */
   }
+/* 
+  :host {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  } */
+  
+  @media (max-width: 640px) {
+    :host {
+      padding: 0 0.5rem;
+    }
+  }
 
   .video-section1 {
     display: flex;
