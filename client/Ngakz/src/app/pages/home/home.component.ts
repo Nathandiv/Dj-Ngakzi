@@ -378,7 +378,7 @@ export class HomeComponent implements OnInit {
     },
     {
       title: 'Su Kasi',
-      artist: 'Mi Casa',
+      artist: 'Dj Ngaks',
       coverImage: 'https://i.pinimg.com/474x/43/80/bd/4380bd8b2ab1c5824b3956bc5851b1fd.jpg',
       spotifyUrl: 'https://open.spotify.com/album/6LaGE3QQ9XpXxbQ6aUJHBJ',
       appleUrl: 'https://music.apple.com/za/album/su-kasi/1494531750',
